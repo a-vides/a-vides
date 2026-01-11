@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interests - Alejandro Vides</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="assets/application.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="assets/map.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="header-logo">
+            <a href="index.html">Alejandro Vides</a>
+          </div>
+          <nav class="header-nav">
+            <a href="about.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="interests.html">Interests</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="page-section">
+        <h2>Interests</h2>
+
+        <!-- Sailing -->
+        <div class="interest-row">
+          <div class="interest-image-container">
+            <img src="assets/sailing.png" alt="Sailing">
+          </div>
+          <div class="interest-text-container">
+            <h3>Sailing</h3>
+            <p>I've competitively sailed Laser 4.7s and Radials for over 4 years and now sail keelboats casually. I also coached youth sailing for 3 years, teaching hundreds of sailors how to sail Optis and Lasers.</p>
+          </div>
+        </div>
+
+        <!-- Mycology -->
+        <div class="interest-row">
+          <div class="interest-text-container">
+            <h3>Mycology</h3>
+            <p>I have a fascination for mushrooms, from foraging to growing my own. I built an automated system to grow Lions Mane and King Oyster mushrooms.</p>
+            <div style="margin-top: 20px;">
+                <a href="work.html#fungal-microclimate-regulator" style="background-color: var(--primary-color); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Learn More &rarr;</a>
+            </div>
+          </div>
+          <div class="interest-image-container mycology-images">
+            <img src="assets/mushroomTent.jpeg" alt="Mushroom Tent">
+            <img src="assets/lionsMane.jpeg" alt="Lion's Mane Mushroom">
+          </div>
+        </div>
+
+        <!-- Travel -->
+        <div class="interest-row">
+          <div class="interest-text-container full-width">
+            <h3>Travel</h3>
+            <p>I love meeting new people, learning about cultures, and seeing new places. Here are some of the top places I’ve been so far:</p>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
