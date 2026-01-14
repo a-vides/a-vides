@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Key West', coords: [24.5551, -81.7800] },
         { name: 'Atlanta', coords: [33.7490, -84.3880] },
         { name: 'Dallas', coords: [32.7767, -96.7970] },
+        { name: 'Chicago', coords: [41.8781, -87.6298] },
         { name: 'San Francisco', coords: [37.7749, -122.4194] },
         { name: 'Mexico City', coords: [19.4326, -99.1332] },
         { name: 'San Miguel de Allende', coords: [20.9143, -100.7436] },
@@ -60,7 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Athens', coords: [37.9838, 23.7275] },
         { name: 'Paros', coords: [37.0853, 25.1534] },
         { name: 'Milos', coords: [36.7460, 24.4445] },
-        { name: 'Amorgos', coords: [36.8333, 25.9000] }
+        { name: 'Amorgos', coords: [36.8333, 25.9000] },
+        { name: 'Ragusa', coords: [36.9250, 14.7300] },
+        { name: 'Hengelo', coords: [52.2650, 6.7938] },
+        { name: 'La Libertad', coords: [13.4833, -89.3167] },
+        { name: 'Montreal', coords: [45.5017, -73.5673] }
     ];
 
     cities.forEach(city => {
