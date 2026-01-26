@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -220,4 +220,429 @@ body {
 
 .resume-section {
   padding: 0; /* Remove padding for the resume section */
+}
+
+/* Featured Projects Section */
+.featured-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.featured-card {
+  background: var(--surface-color);
+  color: var(--text-primary);
+  padding: 3.5rem;
+  border-radius: 8px;
+  position: relative;
+  border: 2px solid var(--text-primary);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.featured-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  margin-top: 3rem;
+  color: var(--text-primary);
+}
+
+.featured-tagline {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.featured-description {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+.featured-metrics {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.metric-separator {
+  color: var(--text-secondary);
+}
+
+.featured-card ul {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.featured-card ul li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
+.featured-card a {
+  color: var(--text-primary);
+}
+
+/* Tech Stack Badges */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tech-badge:hover {
+  transform: translateY(-2px);
+  border-color: var(--text-primary);
+}
+
+/* Project Link Button */
+.project-link-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--text-primary);
+  border: 2px solid var(--text-primary);
+  border-radius: 4px;
+  color: var(--surface-color) !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+.project-link-button:hover {
+  background: var(--surface-color);
+  color: var(--text-primary) !important;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  background: var(--surface-color);
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+}
+
+.featured-card .status-badge {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: var(--surface-color);
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+}
+
+.project-item .status-badge {
+  float: right;
+  margin-left: 1.5rem;
+}
+
+/* Project Categories */
+.project-categories {
+  margin-top: 5rem;
+}
+
+.category-section {
+  margin-bottom: 5rem;
+}
+
+.category-header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--text-primary);
+  color: var(--text-primary);
+}
+
+/* Enhanced Project Items */
+.project-item {
+  padding: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.project-item h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: var(--text-primary);
+  clear: none;
+}
+
+.project-item h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.project-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.project-item ul {
+  margin-bottom: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.project-item ul li {
+  margin-bottom: 0.8rem;
+  line-height: 1.7;
+}
+
+/* Stat Highlighting */
+.stat-highlight-container {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  border: 2px solid var(--text-primary);
+  color: var(--text-primary);
+}
+
+.stat-highlight {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.stat-main {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+.stat-subtext {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 0.4rem;
+}
+
+.stat-secondary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Achievement Badge */
+.achievement-badge {
+  background: var(--surface-color);
+  padding: 1.25rem 2rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  border: 2px solid var(--text-primary);
+}
+
+.achievement-icon {
+  font-size: 1.5rem;
+}
+
+.achievement-text {
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+
+/* Project Links */
+.project-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.featured-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.featured-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.featured-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.category-section {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-projects {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .featured-card {
+    padding: 2.5rem;
+  }
+
+  .featured-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .featured-tagline {
+    font-size: 1rem;
+  }
+
+  .featured-card .status-badge {
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.65rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .featured-card h3 {
+    margin-top: 2.5rem;
+  }
+
+  .stat-main {
+    font-size: 2.25rem;
+  }
+
+  .stat-subtext {
+    font-size: 1rem;
+  }
+
+  .category-header {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-item {
+    padding: 2.5rem !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .project-item h4 {
+    font-size: 1.25rem;
+  }
+
+  .tech-stack {
+    gap: 0.6rem;
+  }
+
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .project-link-button {
+    padding: 0.85rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .achievement-badge {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .stat-highlight-container {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-card {
+    padding: 2rem;
+  }
+
+  .stat-highlight-container {
+    padding: 1.75rem;
+  }
+
+  .project-item {
+    padding: 2rem !important;
+  }
+
+  .project-item img {
+    width: 80px !important;
+    height: 80px !important;
+  }
 }

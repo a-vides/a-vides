@@ -28,98 +28,179 @@
     <main class="container">
       <section id="projects" class="page-section">
         <h2>Projects & Work</h2>
-        <div class="project-list">
-          <div class="project-item">
+        
+        <!-- Featured Projects Section -->
+        <div class="featured-projects">
+          <div class="featured-card">
+            <span class="status-badge status-active">Active</span>
             <h3>The Daily Benji</h3>
-            <p><strong>Email-first personal finance tool</strong> | Co-Founder</p>
-            <p>Parse bank alert emails to track spending patterns—no app required.</p>
+            <p class="featured-tagline">Your spending, delivered daily. No app required.</p>
+            <p class="featured-description">Email-first personal finance tool that sends one email every morning with all your transactions. Parse bank alert emails to track spending patterns—no app, no login, just clarity.</p>
+            <div class="featured-metrics">
+              <span class="metric-item">In beta • Currently onboarding beta users</span>
+            </div>
             <ul>
               <li>Built email parsing system in Ruby on Rails with custom regex patterns for major financial institutions (Chase, Bank of America, Wells Fargo)</li>
               <li>Developed full-stack platform: PostgreSQL database, RESTful API, user management dashboard, automated email delivery</li>
-              <li>Currently finishing product and onboarding beta users</li>
+              <li>Email-first approach: no app required, works entirely through daily email summaries</li>
             </ul>
-            <a href="http://dailybenji.com" target="_blank">dailybenji.com →</a>
+            <div class="tech-stack">
+              <span class="tech-badge tech-ruby">Ruby on Rails</span>
+              <span class="tech-badge tech-database">PostgreSQL</span>
+              <span class="tech-badge tech-api">RESTful API</span>
+              <span class="tech-badge tech-other">Email Parsing</span>
+            </div>
+            <a href="http://dailybenji.com" target="_blank" class="project-link-button">Visit Website →</a>
           </div>
 
-          <div class="project-item">
-            <h3>Crypto & NFT Trading</h3>
-            <p>$300 → $60,000 in 12 months (200x return)</p>
-            <ul>
-              <li>Executed thousands of trades; $1.9M+ total volume</li>
-              <li>Managed capital across 100+ wallets on multiple blockchain networks</li>
-            </ul>
-            <h4>Strategies:</h4>
-            <ul>
-              <li>Whale tracking via Nansen analytics to identify and front-run large wallet movements</li>
-              <li>Copy trading consistently profitable wallets</li>
-              <li>Automated trading bots</li>
-              <li>Pattern recognition to exploit recurring market cycles</li>
-            </ul>
-          </div>
-
-          <div class="project-item">
-            <h3>Ekanta Wealth Advisors</h3>
-            <p><strong>Multi-family office</strong> | Summer Analyst </p>
-            <ul>
-              <li>Constructed 5 risk-adjusted model portfolios using Koyfin and Reuters Eikon</li>
-              <li>Distributed twice-daily market updates covering price levels, news, and firm holdings</li>
-              <li>Analyzed redundancies across multi-account bond portfolios; recommended consolidation strategies</li>
-              <li>Evaluated fund compositions for client risk rating compliance</li>
-              <li>Participated in fund manager pitches for private equity, private credit, and real estate opportunities</li>
-            </ul>
-          </div>
-
-          <div class="project-item">
+          <div class="featured-card">
+            <span class="status-badge status-active">Active</span>
             <h3>Pericles Capital</h3>
-            <p><strong>Student-run research group</strong> | Co-Founder</p>
-            <p>Exploring inefficient markets through prediction markets and IoT-based edges.</p>
+            <p class="featured-tagline">Quantitative Research Lab - Markets Too Small For Big Funds</p>
+            <p class="featured-description">Student-run quantitative research lab applying institutional-grade methods to illiquid and overlooked markets.</p>
+            <div class="featured-metrics">
+              <span class="metric-item">Chief Research Officer • 6+ markets researched</span>
+            </div>
             <ul>
-              <li>Research-focused approach: investigate many ideas, vault promising ones, iterate with speed</li>
+              <li>Thesis-driven approach to identifying market inefficiencies</li>
+              <li>Agile execution with risk-aware capital deployment strategies</li>
+              <li>Research-focused methodology: investigate many ideas, vault promising ones, iterate with speed</li>
               <li>Currently in research phase building infrastructure before deploying capital</li>
             </ul>
-            <a href="https://periclescapital.org/" target="_blank">periclescapital.org →</a>
+            <div class="tech-stack">
+              <span class="tech-badge tech-other">Quantitative Analysis</span>
+              <span class="tech-badge tech-other">Market Research</span>
+              <span class="tech-badge tech-other">Risk Management</span>
+            </div>
+            <a href="https://periclescapital.org/" target="_blank" class="project-link-button">Visit Website →</a>
+          </div>
+        </div>
+
+        <!-- Finance & Trading Category -->
+        <div class="project-categories">
+          <div class="category-section">
+            <h3 class="category-header">Finance & Trading</h3>
+            
+            <div class="project-item">
+              <span class="status-badge status-past">Past</span>
+              <h4>Crypto & NFT Trading</h4>
+              <div class="stat-highlight-container">
+                <div class="stat-highlight">
+                  <span class="stat-main">$300 → $60,000</span>
+                  <span class="stat-subtext">200x return in 12 months</span>
+                </div>
+                <div class="stat-secondary">
+                  <span class="stat-label">Total Volume:</span>
+                  <span class="stat-value">$1.9M+</span>
+                </div>
+              </div>
+              <ul>
+                <li>Executed thousands of trades across multiple blockchain networks</li>
+                <li>Managed capital across 100+ wallets on Ethereum, Solana, and other chains</li>
+              </ul>
+              <h5>Strategies:</h5>
+              <ul>
+                <li>Whale tracking via Nansen analytics to identify and front-run large wallet movements</li>
+                <li>Copy trading consistently profitable wallets</li>
+                <li>Automated trading bots for executing high-frequency trades</li>
+                <li>Pattern recognition to exploit recurring market cycles</li>
+              </ul>
+            </div>
+
+            <div class="project-item">
+              <span class="status-badge status-past">Past</span>
+              <h4>Reselling</h4>
+              <p class="project-subtitle"><strong>Secondary market arbitrage</strong></p>
+              <div class="stat-highlight-container">
+                <div class="stat-highlight">
+                  <span class="stat-main">$20K+</span>
+                  <span class="stat-subtext">Revenue from 180+ transactions</span>
+                </div>
+              </div>
+              <ul>
+                <li>Flipped limited-edition shoes, clothing, collectibles, and restaurant reservations</li>
+                <li>Platforms: eBay, StockX, and others</li>
+                <li>100% positive seller rating maintained across all platforms</li>
+                <li>Managed inventory, shipping, and pricing strategy based on market trends</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="project-item" id="fungal-microclimate-regulator">
-            <img src="assets/mushroomTent.jpeg" alt="Mushroom Tent" style="width: 108px; height: 108px; border-radius: 8px; float: right; margin-left: 15px;">
-            <h3>Fungal Microclimate Regulator</h3>
-            <p><strong>IoT environmental control system</strong> | Personal Project</p>
-            <p>Automated climate control for growing Lion's Mane and King Oyster mushrooms.</p>
-            <ul>
-              <li>ESP32 microcontroller running custom C++ firmware</li>
-              <li>Real-time sensor polling for temperature, humidity, and CO₂</li>
-              <li>PID loops for humidity regulation</li>
-              <li>Automated exhaust fan based on CO₂ thresholds (800–1500 PPM for Lion's Mane, 600–800 PPM for King Oyster)</li>
-              <li>OLED display for live readings</li>
-              <li>ThingSpeak telemetry integration</li>
-              <li>GitHub Pages dashboard for remote monitoring</li>
-            </ul>
-            <p>Stack: ESP32 · C++ · ThingSpeak API · GitHub Pages</p>
-            <a href="https://github.com/avides" target="_blank">GitHub repo →</a> · <a href="#" target="_blank">Live dashboard →</a>
+          <!-- Professional Experience Category -->
+          <div class="category-section">
+            <h3 class="category-header">Professional Experience</h3>
+            
+            <div class="project-item">
+              <span class="status-badge status-past">Past</span>
+              <h4>Ekanta Wealth Advisors</h4>
+              <p class="project-subtitle"><strong>Multi-family office</strong> | Summer Analyst</p>
+              <ul>
+                <li>Constructed 5 risk-adjusted model portfolios using Koyfin and Reuters Eikon</li>
+                <li>Distributed twice-daily market updates covering price levels, news, and firm holdings</li>
+                <li>Analyzed redundancies across multi-account bond portfolios; recommended consolidation strategies</li>
+                <li>Evaluated fund compositions for client risk rating compliance</li>
+                <li>Participated in fund manager pitches for private equity, private credit, and real estate opportunities</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="project-item">
-            <h3>Life Studio</h3>
-            <p><strong>Mobile app development studio</strong> | Co-Founder</p>
-            <h4>Ignis — Wildfire safety app</h4>
-            <ul>
-              <li>Integrated NASA wildfire API with AI-driven risk prediction for real-time alerts</li>
-              <li>Built in Swift and Python</li>
-              <li>Won US Congressional App Challenge</li>
-            </ul>
-            <p>Erra & Cogna — Early-stage apps for SAT preparation and digital wellness (not launched)</p>
-          </div>
+          <!-- Technical Projects Category -->
+          <div class="category-section">
+            <h3 class="category-header">Technical Projects</h3>
+            
+            <div class="project-item" id="fungal-microclimate-regulator">
+              <span class="status-badge status-complete">Complete</span>
+              <img src="assets/mushroomTent.jpeg" alt="Mushroom Tent" style="width: 108px; height: 108px; border-radius: 8px; float: right; margin-left: 15px;">
+              <h4>Fungal Microclimate Regulator</h4>
+              <p class="project-subtitle"><strong>IoT environmental control system</strong> | Personal Project</p>
+              <p>Automated climate control for growing Lion's Mane and King Oyster mushrooms.</p>
+              <ul>
+                <li>ESP32 microcontroller running custom C++ firmware</li>
+                <li>Real-time sensor polling for temperature, humidity, and CO₂</li>
+                <li>PID loops for humidity regulation</li>
+                <li>Automated exhaust fan based on CO₂ thresholds (800–1500 PPM for Lion's Mane, 600–800 PPM for King Oyster)</li>
+                <li>OLED display for live readings</li>
+                <li>ThingSpeak telemetry integration</li>
+                <li>GitHub Pages dashboard for remote monitoring</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-badge tech-cpp">C++</span>
+                <span class="tech-badge tech-other">ESP32</span>
+                <span class="tech-badge tech-api">ThingSpeak API</span>
+                <span class="tech-badge tech-other">GitHub Pages</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/avides" target="_blank">GitHub repo →</a>
+                <a href="#" target="_blank">Live dashboard →</a>
+              </div>
+            </div>
 
-          <div class="project-item">
-            <h3>Reselling</h3>
-            <p><strong>Secondary market arbitrage</strong></p>
-            <p>$20K+ revenue | 180+ transactions</p>
-            <ul>
-              <li>Flipped limited-edition shoes, clothing, collectibles, and restaurant reservations</li>
-              <li>Platforms: eBay, StockX, and others</li>
-              <li>100% positive seller rating</li>
-              <li>Managed inventory, shipping, and pricing strategy based on market trends</li>
-            </ul>
+            <div class="project-item">
+              <span class="status-badge status-complete">Complete</span>
+              <h4>Life Studio</h4>
+              <p class="project-subtitle"><strong>Mobile app development studio</strong> | Co-Founder</p>
+              
+              <div class="achievement-badge">
+                <span class="achievement-icon">🏆</span>
+                <span class="achievement-text">Won US Congressional App Challenge</span>
+              </div>
+              
+              <h5>Ignis — Wildfire safety app</h5>
+              <ul>
+                <li>Integrated NASA wildfire API with AI-driven risk prediction for real-time alerts</li>
+                <li>Built in Swift and Python for iOS platform</li>
+                <li>Won US Congressional App Challenge</li>
+              </ul>
+              
+              <p><strong>Erra & Cogna</strong> — Early-stage apps for SAT preparation and digital wellness (not launched)</p>
+              
+              <div class="tech-stack">
+                <span class="tech-badge tech-swift">Swift</span>
+                <span class="tech-badge tech-python">Python</span>
+                <span class="tech-badge tech-api">NASA API</span>
+                <span class="tech-badge tech-other">iOS</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
