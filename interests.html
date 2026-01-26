@@ -16,6 +16,7 @@
             crossorigin=""
         ></script>
         <script src="assets/map.js" defer></script>
+        <script src="assets/albums.js" defer></script>
     </head>
 
     <body>
@@ -39,67 +40,84 @@
                 <h2>Interests</h2>
 
                 <!-- Sailing -->
-                <div class="interest-row">
-                    <div class="interest-image-container">
-                        <img src="assets/sailing.png" alt="Sailing" />
-                    </div>
-                    <div class="interest-text-container">
-                        <h3>Sailing</h3>
-                        <p>
-                            I've competitively sailed Laser 4.7s and Radials for
-                            over 4 years. I also coached youth sailing for 3
-                            years, teaching hundreds of sailors how to sail
-                            Optis and Lasers.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Mycology -->
-                <div class="interest-row">
-                    <div class="interest-text-container">
-                        <h3>Mycology</h3>
-                        <p>
-                            I have a fascination for mushrooms, from foraging to
-                            growing my own. I built an automated system to grow
-                            Lions Mane and King Oyster mushrooms.
-                        </p>
-                        <div style="margin-top: 20px">
-                            <a
-                                href="work.html#fungal-microclimate-regulator"
-                                style="
-                                    background-color: black;
-                                    color: white;
-                                    padding: 10px 20px;
-                                    text-decoration: none;
-                                    border-radius: 5px;
-                                    font-weight: bold;
-                                "
-                                >Learn More &rarr;</a
-                            >
+                <div class="interest-card">
+                    <div class="interest-row">
+                        <div class="interest-image-container">
+                            <img src="assets/sailing.png" alt="Sailing" />
                         </div>
-                    </div>
-                    <div class="interest-image-container mycology-images">
-                        <img
-                            src="assets/mushroomTent.jpeg"
-                            alt="Mushroom Tent"
-                        />
-                        <img
-                            src="assets/lionsMane.jpeg"
-                            alt="Lion's Mane Mushroom"
-                        />
+                        <div class="interest-text-container">
+                            <h3>Sailing</h3>
+                            <p>
+                                I've competitively sailed Laser 4.7s and Radials for
+                                over 4 years. I also coached youth sailing for 3
+                                years, teaching hundreds of sailors how to sail
+                                Optis and Lasers.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Travel -->
-                <div class="interest-row">
-                    <div class="interest-text-container full-width">
-                        <h3>Travel</h3>
-                        <p>
-                            I love meeting new people, learning about cultures,
-                            and seeing new places. Here are some of the top
-                            places I’ve been so far:
-                        </p>
-                        <div id="map" style="height: 400px; width: 100%"></div>
+                <div class="interest-card">
+                    <div class="interest-row">
+                        <div class="interest-text-container full-width">
+                            <h3>Travel</h3>
+                            <p>
+                                I love meeting new people, learning about cultures,
+                                and seeing new places. Here are some of the top
+                                places I've been so far:
+                            </p>
+                            <div id="map" style="height: 400px; width: 100%; margin-top: 1.5rem; border-radius: 8px; border: 1px solid var(--border-color);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mycology -->
+                <div class="interest-card">
+                    <div class="interest-row">
+                        <div class="interest-text-container">
+                            <h3>Mycology</h3>
+                            <p>
+                                I have a fascination for mushrooms, from foraging to
+                                growing my own. I built an automated system to grow
+                                Lions Mane and King Oyster mushrooms.
+                            </p>
+                            <div class="interest-button-container">
+                                <a href="work.html#fungal-microclimate-regulator" class="interest-button">Learn More →</a>
+                            </div>
+                        </div>
+                        <div class="interest-image-container mycology-images">
+                            <img
+                                src="assets/mushroomTent.jpeg"
+                                alt="Mushroom Tent"
+                            />
+                            <img
+                                src="assets/lionsMane.jpeg"
+                                alt="Lion's Mane Mushroom"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music -->
+                <div class="interest-card music-card">
+                    <h3>Music</h3>
+                    <p>Some of my favorite albums.</p>
+                    
+                    <div class="album-collage">
+                        <!-- Albums loaded via JavaScript from iTunes API -->
+                    </div>
+                </div>
+
+                <!-- Espresso -->
+                <div class="interest-card">
+                    <div class="interest-row">
+                        <div class="interest-text-container">
+                            <h3>Espresso</h3>
+                            <p>
+                                I am an espresso geek obsessed with brewing the perfect coffee. I have a Rancilio Silvia which I modified and a Niche Zero, along with many other coffee gadgets I optimize to extract the best shot possible.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -7,9 +7,25 @@ document.addEventListener('DOMContentLoaded', () => {
   function initMap() {
     const map = L.map('map').setView([20, 0], 2);
 
+    // Use standard OpenStreetMap tiles (English)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+      className: 'map-tiles'
     }).addTo(map);
+
+    // Create custom black icon for markers
+    const blackIcon = L.icon({
+      iconUrl: 'data:image/svg+xml;base64,' + btoa(`
+        <svg width="25" height="41" viewBox="0 0 25 41" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.5 0C5.596 0 0 5.596 0 12.5c0 9.375 12.5 28.5 12.5 28.5S25 21.875 25 12.5C25 5.596 19.404 0 12.5 0z" fill="#212529" stroke="#ffffff" stroke-width="1.5"/>
+          <circle cx="12.5" cy="12.5" r="4" fill="#ffffff"/>
+        </svg>
+      `),
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34]
+    });
 
     const cities = [
         { name: 'Boston', coords: [42.3601, -71.0589] },
@@ -69,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     cities.forEach(city => {
-      L.marker(city.coords).addTo(map)
+      L.marker(city.coords, { icon: blackIcon }).addTo(map)
         .bindPopup(city.name);
     });
   }
