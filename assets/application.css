@@ -519,6 +519,31 @@ body {
   color: var(--text-primary);
 }
 
+/* Incoming/compact project items */
+.project-item-incoming {
+  padding: 1.5rem 2rem !important;
+  margin-bottom: 0 !important;
+  border-left: 3px solid var(--text-primary);
+  border-radius: 0 8px 8px 0;
+}
+
+.project-item-incoming + .project-item-incoming {
+  border-top: 1px solid var(--border-color);
+  border-radius: 0;
+}
+
+.project-item-incoming:last-of-type {
+  margin-bottom: 3rem !important;
+}
+
+.project-item-incoming h4 {
+  margin-bottom: 0.25rem;
+}
+
+.project-item-incoming .project-subtitle {
+  margin-bottom: 0;
+}
+
 /* Enhanced Project Items */
 .project-item {
   padding: 3rem !important;
