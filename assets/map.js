@@ -81,7 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Ragusa', coords: [36.9250, 14.7300] },
         { name: 'Hengelo', coords: [52.2650, 6.7938] },
         { name: 'La Libertad', coords: [13.4833, -89.3167] },
-        { name: 'Montreal', coords: [45.5017, -73.5673] }
+        { name: 'Montreal', coords: [45.5017, -73.5673] },
+        { name: 'Rio de Janeiro', coords: [-22.9068, -43.1729] },
+        { name: 'Sao Paulo', coords: [-23.5505, -46.6333] },
+        { name: 'Itacare', coords: [-14.2789, -38.9961] },
+        { name: 'Lima', coords: [-12.0464, -77.0428] },
+        { name: 'Cusco', coords: [-13.5320, -71.9675] },
+        { name: 'Huaraz', coords: [-9.5277, -77.5278] }
     ];
 
     cities.forEach(city => {
